@@ -22,6 +22,10 @@ class SpeakerController(object):
         if header_name == "AdjustVolume":
             key = "AdjustVolume"
             value = int(get_payload(request).get("volume"))
+            
+            # Increase the volume with 2, as 1 is too minor
+            if value == 10:
+                value = 20
         if header_name == "SetMute":
             key = "SetMute"
             value = get_payload(request).get("mute")

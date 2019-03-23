@@ -530,6 +530,203 @@ DEVICES = [
                 "version": "3"
             }
         ]
+    },
+    {
+        "endpointId": "LivingRoomLampBig",
+        "friendlyName": "Lamp Big Living Room",
+        "description": "Lamp Big in the living room",
+        "manufacturerName": "Regular lamp",
+        "displayCategories": [
+            "LIGHT"
+        ],
+        "metadata": {
+            "mqttTopicGet": "get/apartment/livingRoom/lamp/1",
+            "mqttTopicSet": "set/apartment/livingRoom/lamp/1"
+        },
+        "capabilities": [
+            {
+                "interface": "Alexa.PowerController",
+                "properties": {
+                    "proactivelyReported": False,
+                    "retrievable": True,
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ]
+                },
+                "type": "AlexaInterface",
+                "version": "3"
+            },
+            {
+                "interface": "Alexa",
+                "type": "AlexaInterface",
+                "version": "3"
+            }
+        ]
+    },
+    {
+        "endpointId": "LivingRoomLampSmall",
+        "friendlyName": "Lamp Small Living Room",
+        "description": "Lamp Small in the living room",
+        "manufacturerName": "Regular lamp",
+        "displayCategories": [
+            "LIGHT"
+        ],
+        "metadata": {
+            "mqttTopicGet": "get/apartment/livingRoom/lamp/2",
+            "mqttTopicSet": "set/apartment/livingRoom/lamp/2"
+        },
+        "capabilities": [
+            {
+                "interface": "Alexa.PowerController",
+                "properties": {
+                    "proactivelyReported": False,
+                    "retrievable": True,
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ]
+                },
+                "type": "AlexaInterface",
+                "version": "3"
+            },
+            {
+                "interface": "Alexa",
+                "type": "AlexaInterface",
+                "version": "3"
+            }
+        ]
+    },
+    {
+        "endpointId": "LivingRoomLampLedBig",
+        "friendlyName": "Big LED Lamp Living Room",
+        "description": "Big LED Lamp in the living room",
+        "manufacturerName": "LED",
+        "displayCategories": [
+            "LIGHT"
+        ],
+        "metadata": {
+            "mqttTopicGet": "get/apartment/livingRoom/lamp/3",
+            "mqttTopicSet": "set/apartment/livingRoom/lamp/3"
+        },
+        "capabilities": [
+            {
+                "interface": "Alexa.PowerController",
+                "properties": {
+                    "proactivelyReported": False,
+                    "retrievable": True,
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ]
+                },
+                "type": "AlexaInterface",
+                "version": "3"
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.ColorController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "color"
+                        }
+                    ],
+                    "proactivelyReported": False,
+                    "retrievable": True
+                }
+            },
+            {
+                "interface": "Alexa",
+                "type": "AlexaInterface",
+                "version": "3"
+            }
+        ]
+    },
+    {
+        "endpointId": "LivingRoomLampLedSmall",
+        "friendlyName": "Small LED Lamp Living Room",
+        "description": "Small LED Lamp in the living room",
+        "manufacturerName": "LED",
+        "displayCategories": [
+            "LIGHT"
+        ],
+        "metadata": {
+            "mqttTopicGet": "get/apartment/livingRoom/lamp/4",
+            "mqttTopicSet": "set/apartment/livingRoom/lamp/4"
+        },
+        "capabilities": [
+            {
+                "interface": "Alexa.PowerController",
+                "properties": {
+                    "proactivelyReported": False,
+                    "retrievable": True,
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ]
+                },
+                "type": "AlexaInterface",
+                "version": "3"
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.ColorController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "color"
+                        }
+                    ],
+                    "proactivelyReported": False,
+                    "retrievable": True
+                }
+            },
+            {
+                "interface": "Alexa",
+                "type": "AlexaInterface",
+                "version": "3"
+            }
+        ]
+    },
+    {
+        "endpointId": "GarageExternalDoor",
+        "friendlyName": "External garage door",
+        "description": "The external Garage door",
+        "manufacturerName": "HomeMade",
+        "displayCategories": [
+            "SWITCH"
+        ],
+        "metadata": {
+            "mqttTopicGet": "get/garage/space/door/1",
+            "mqttTopicSet": "set/garage/space/door/1"
+        },
+        "capabilities": [
+            {
+                "interface": "Alexa.PowerController",
+                "properties": {
+                    "proactivelyReported": False,
+                    "retrievable": True,
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ]
+                },
+                "type": "AlexaInterface",
+                "version": "3"
+            },
+            {
+                "interface": "Alexa",
+                "type": "AlexaInterface",
+                "version": "3"
+            }
+        ]
     }
-
 ]

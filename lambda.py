@@ -12,6 +12,7 @@ from smart_home.utils_lambda import get_uuid, get_directive_version
 from validation import validate_message
 from smart_home.speaker_controller import SpeakerController
 from smart_home.playback_controller import PlaybackController
+from smart_home.color_controller import ColorController
 from smart_home.lock_controller import LockController
 from smart_home.utils_lambda import report_state_success
 from smart_home.utils_mqtt import get_device_status
@@ -92,6 +93,8 @@ def handle_non_discovery(request):
         return PlaybackController.handle_request(request)
     elif request_namespace == "Alexa.LockController":
         return LockController.handle_request(request)
+    elif request_namespace == "Alexa.ColorController":
+        return ColorController.handle_request(request)
     elif request_namespace == "Alexa" and request_name == "ReportState":
         return __handle_report_state(request)
     elif request_namespace == "Alexa.Authorization":
@@ -140,5 +143,8 @@ def __handle_report_state(request):
         elif interface == "Alexa.LockController":
             properties.append(
                 LockController.handle_report_state(request, status))
+        elif interface == "Alexa.ColorController":
+            properties.append(
+                ColorController.handle_report_state(request, status))
 
     return report_state_success(request, properties)
