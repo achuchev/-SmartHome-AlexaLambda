@@ -69,54 +69,6 @@ DEVICES = [
             }
         ]
     },
-    #     {
-    #         "endpointId": "LargeBedroomHeater2",
-    #         "friendlyName": "Heater Two Large Bedroom",
-    #         "description": "The second heater in the large bedroom",
-    #         "manufacturerName": "Adax",
-    #         "displayCategories": [
-    #             "THERMOSTAT"
-    #         ],
-    #         "metadata": {
-    #             "mqttTopicGet": "get/apartment/largeBedroom/heater/2",
-    #             "mqttTopicSet": "set/apartment/largeBedroom/heater/2"
-    #         },
-    #         "capabilities": [
-    #             {
-    #                 "interface": "Alexa.PowerController",
-    #                 "properties": {
-    #                     "proactivelyReported": False,
-    #                     "retrievable": False,
-    #                     "supported": [
-    #                         {
-    #                             "name": "powerState"
-    #                         }
-    #                     ]
-    #                 },
-    #                 "type": "AlexaInterface",
-    #                 "version": "3"
-    #             },
-    #             {
-    #                 "type": "AlexaInterface",
-    #                 "interface": "Alexa.ThermostatController",
-    #                 "version": "3",
-    #                 "properties": {
-    #                     "supported": [
-    #                         {
-    #                             "name": "targetSetpoint"
-    #                         }
-    #                     ],
-    #                     "proactivelyReported": False,
-    #                     "retrievable": False
-    #                 }
-    #             },
-    #             {
-    #                 "interface": "Alexa",
-    #                 "type": "AlexaInterface",
-    #                 "version": "3"
-    #             }
-    #         ]
-    #     },
     {
         "endpointId": "SmallBedroomWindow",
         "friendlyName": "Window Small Bedroom",
@@ -600,15 +552,9 @@ DEVICES = [
         ]
     },
     {
-<<<<<<< HEAD
         "endpointId": "LivingRoomLampLedBig",
         "friendlyName": "Big LED Lamp Living Room",
         "description": "Big LED Lamp in the living room",
-=======
-        "endpointId": "LivingRoomLampLed",
-        "friendlyName": "LED Lamp Living Room",
-        "description": "LED Lamp in the living room",
->>>>>>> d3ea7a3b4e9bef83052cf66567bffff21a574951
         "manufacturerName": "LED",
         "displayCategories": [
             "LIGHT"
@@ -633,7 +579,6 @@ DEVICES = [
                 "version": "3"
             },
             {
-<<<<<<< HEAD
                 "type": "AlexaInterface",
                 "interface": "Alexa.ColorController",
                 "version": "3",
@@ -730,8 +675,6 @@ DEVICES = [
                 "version": "3"
             },
             {
-=======
->>>>>>> d3ea7a3b4e9bef83052cf66567bffff21a574951
                 "interface": "Alexa",
                 "type": "AlexaInterface",
                 "version": "3"
