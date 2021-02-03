@@ -53,7 +53,7 @@ class PowerController(object):
             "name": "powerState",
             "value": "ON" if current_power_on else "OFF",
             "timeOfSample": get_utc_timestamp(),
-            "uncertaintyInMilliseconds": 500
+            "uncertaintyInMilliseconds": 0
         }
 
     @staticmethod

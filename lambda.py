@@ -7,6 +7,7 @@ from smart_home.channel_controller import ChannelController
 from smart_home.devices import DEVICES
 from smart_home.percentage_controller import PercentageController
 from smart_home.power_controller import PowerController
+from smart_home.contact_sensor import ContactSensor
 from smart_home.thermostat_controller import ThermostatController
 from smart_home.utils_lambda import get_uuid, get_directive_version
 from validation import validate_message
@@ -95,6 +96,8 @@ def handle_non_discovery(request):
         return LockController.handle_request(request)
     elif request_namespace == "Alexa.ColorController":
         return ColorController.handle_request(request)
+    elif request_namespace == "Alexa.ContactSensor":
+        return ContactSensor.handle_request(request)
     elif request_namespace == "Alexa" and request_name == "ReportState":
         return __handle_report_state(request)
     elif request_namespace == "Alexa.Authorization":
@@ -146,5 +149,8 @@ def __handle_report_state(request):
         elif interface == "Alexa.ColorController":
             properties.append(
                 ColorController.handle_report_state(request, status))
+        elif interface == "Alexa.ContactSensor":
+            properties.append(
+                ContactSensor.handle_report_state(request, status))
 
     return report_state_success(request, properties)

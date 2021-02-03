@@ -124,7 +124,7 @@ class ColorController(object):
                 "brightness": brightness
             },
             "timeOfSample": get_utc_timestamp(),
-            "uncertaintyInMilliseconds": 500
+            "uncertaintyInMilliseconds": 0
         }
 
     @staticmethod

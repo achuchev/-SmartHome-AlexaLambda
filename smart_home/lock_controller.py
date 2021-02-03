@@ -91,7 +91,7 @@ class LockController(object):
             "name": "lockState",
                     "value": lockState,
                     "timeOfSample": get_utc_timestamp(),
-                    "uncertaintyInMilliseconds": 500
+                    "uncertaintyInMilliseconds": 0
         }
 
     @staticmethod

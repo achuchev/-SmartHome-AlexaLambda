@@ -108,7 +108,7 @@ def report_state_success(request, properties):
                 "value": "OK"
         },
         "timeOfSample": get_utc_timestamp(),
-        "uncertaintyInMilliseconds": 500
+        "uncertaintyInMilliseconds": 0
     }
 
     properties.append(endpoint_health)

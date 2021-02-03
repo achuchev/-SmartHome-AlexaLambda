@@ -5,7 +5,7 @@ DEVICES = [
         "manufacturerName": "Daikin AC",
         "description": "Air conditioner in living room",
         "displayCategories": [
-            "THERMOSTAT"
+            "THERMOSTAT", "TEMPERATURE_SENSOR"
         ],
         "metadata": {
             "mqttTopicGet": "get/apartment/livingRoom/ac",
@@ -59,212 +59,8 @@ DEVICES = [
                         }
                     ],
                     "proactivelyReported": False,
-                    "retrievable": False
+                    "retrievable": True
                 }
-            },
-            {
-                "interface": "Alexa",
-                "type": "AlexaInterface",
-                "version": "3"
-            }
-        ]
-    },
-    {
-        "endpointId": "SmallBedroomWindow",
-        "friendlyName": "Window Small Bedroom",
-        "description": "Sunblind for the window in the small bedroom",
-        "manufacturerName": "Somfy",
-        "displayCategories": [
-            "SWITCH"
-        ],
-        "metadata": {
-            "mqttTopicGet": "get/apartment/smallBedroom/sunblind/1",
-            "mqttTopicSet": "set/apartment/smallBedroom/sunblind/1"
-        },
-        "capabilities": [
-            {
-                "interface": "Alexa.PowerController",
-                "properties": {
-                    "proactivelyReported": False,
-                    "retrievable": True,
-                    "supported": [
-                        {
-                            "name": "powerState"
-                        }
-                    ]
-                },
-                "type": "AlexaInterface",
-                "version": "3"
-            },
-            {
-                "interface": "Alexa",
-                "type": "AlexaInterface",
-                "version": "3"
-            }
-        ]
-    },
-    {
-        "endpointId": "LargeBedroomWindowSunblind1",
-        "friendlyName": "Door 1 Large Bedroom",
-        "description": "Sunblind for the door in the large bedroom",
-        "manufacturerName": "Somfy",
-        "displayCategories": [
-            "SWITCH"
-        ],
-        "metadata": {
-            "mqttTopicGet": "get/apartment/largeBedroom/sunblind/1",
-            "mqttTopicSet": "set/apartment/largeBedroom/sunblind/1"
-        },
-        "capabilities": [
-            {
-                "interface": "Alexa.PowerController",
-                "properties": {
-                    "proactivelyReported": False,
-                    "retrievable": True,
-                    "supported": [
-                        {
-                            "name": "powerState"
-                        }
-                    ]
-                },
-                "type": "AlexaInterface",
-                "version": "3"
-            },
-            {
-                "interface": "Alexa",
-                "type": "AlexaInterface",
-                "version": "3"
-            }
-        ]
-    },
-    {
-        "endpointId": "LargeBedroomWindow2",
-        "friendlyName": "Window 2 Large Bedroom",
-        "description": "Sunblind for the second window in the large bedroom",
-        "manufacturerName": "Somfy",
-        "displayCategories": [
-            "SWITCH"
-        ],
-        "metadata": {
-            "mqttTopicGet": "get/apartment/largeBedroom/sunblind/2",
-            "mqttTopicSet": "set/apartment/largeBedroom/sunblind/2"
-        },
-        "capabilities": [
-            {
-                "interface": "Alexa.PowerController",
-                "properties": {
-                    "proactivelyReported": False,
-                    "retrievable": True,
-                    "supported": [
-                        {
-                            "name": "powerState"
-                        }
-                    ]
-                },
-                "type": "AlexaInterface",
-                "version": "3"
-            },
-            {
-                "interface": "Alexa",
-                "type": "AlexaInterface",
-                "version": "3"
-            }
-        ]
-    },
-    {
-        "endpointId": "LargeBedroomWindow3",
-        "friendlyName": "Window 3 Large Bedroom",
-        "description": "Sunblind for the third window in the large bedroom",
-        "manufacturerName": "Somfy",
-        "displayCategories": [
-            "SWITCH"
-        ],
-        "metadata": {
-            "mqttTopicGet": "get/apartment/largeBedroom/sunblind/3",
-            "mqttTopicSet": "set/apartment/largeBedroom/sunblind/3"
-        },
-        "capabilities": [
-            {
-                "interface": "Alexa.PowerController",
-                "properties": {
-                    "proactivelyReported": False,
-                    "retrievable": True,
-                    "supported": [
-                        {
-                            "name": "powerState"
-                        }
-                    ]
-                },
-                "type": "AlexaInterface",
-                "version": "3"
-            },
-            {
-                "interface": "Alexa",
-                "type": "AlexaInterface",
-                "version": "3"
-            }
-        ]
-    },
-    {
-        "endpointId": "LargeBedroomWindow4",
-        "friendlyName": "Window 4 Large Bedroom",
-        "description": "Sunblind for the fourth window in the large bedroom",
-        "manufacturerName": "Somfy",
-        "displayCategories": [
-            "SWITCH"
-        ],
-        "metadata": {
-            "mqttTopicGet": "get/apartment/largeBedroom/sunblind/4",
-            "mqttTopicSet": "set/apartment/largeBedroom/sunblind/4"
-        },
-        "capabilities": [
-            {
-                "interface": "Alexa.PowerController",
-                "properties": {
-                    "proactivelyReported": False,
-                    "retrievable": True,
-                    "supported": [
-                        {
-                            "name": "powerState"
-                        }
-                    ]
-                },
-                "type": "AlexaInterface",
-                "version": "3"
-            },
-            {
-                "interface": "Alexa",
-                "type": "AlexaInterface",
-                "version": "3"
-            }
-        ]
-    },
-    {
-        "endpointId": "LargeBedroomWindowAll",
-        "friendlyName": "All Windows Large Bedroom",
-        "description": "Sunblinds for all windows in the large bedroom",
-        "manufacturerName": "Somfy",
-        "displayCategories": [
-            "SWITCH"
-        ],
-        "metadata": {
-            "mqttTopicGet": "get/apartment/largeBedroom/sunblind/all",
-            "mqttTopicSet": "set/apartment/largeBedroom/sunblind/all"
-        },
-        "capabilities": [
-            {
-                "interface": "Alexa.PowerController",
-                "properties": {
-                    "proactivelyReported": False,
-                    "retrievable": True,
-                    "supported": [
-                        {
-                            "name": "powerState"
-                        }
-                    ]
-                },
-                "type": "AlexaInterface",
-                "version": "3"
             },
             {
                 "interface": "Alexa",
@@ -345,74 +141,6 @@ DEVICES = [
                     "retrievable": False, }
             }
 
-        ]
-    },
-    {
-        "endpointId": "ApartmentLock",
-        "friendlyName": "Apartment Lock",
-        "description": "Alarm system of Apartment zone",
-        "manufacturerName": "Paradox",
-        "displayCategories": [
-            "SMARTLOCK"
-        ],
-        "metadata": {
-            "mqttTopicGet": "get/home/lock",
-            "mqttTopicSet": "set/home/lock"
-        },
-        "capabilities": [
-            {
-                "interface": "Alexa.LockController",
-                "properties": {
-                    "proactivelyReported": False,
-                    "retrievable": True,
-                    "supported": [
-                        {
-                            "name": "lockState"
-                        }
-                    ]
-                },
-                "type": "AlexaInterface",
-                "version": "3"
-            },
-            {
-                "interface": "Alexa",
-                "type": "AlexaInterface",
-                "version": "3"
-            }
-        ]
-    },
-    {
-        "endpointId": "GarageLock",
-        "friendlyName": "Garage Lock",
-        "description": "Alarm system of Garage zone",
-        "manufacturerName": "Paradox",
-        "displayCategories": [
-            "SMARTLOCK"
-        ],
-        "metadata": {
-            "mqttTopicGet": "get/home/lock",
-            "mqttTopicSet": "set/home/lock"
-        },
-        "capabilities": [
-            {
-                "interface": "Alexa.LockController",
-                "properties": {
-                    "proactivelyReported": False,
-                    "retrievable": True,
-                    "supported": [
-                        {
-                            "name": "lockState"
-                        }
-                    ]
-                },
-                "type": "AlexaInterface",
-                "version": "3"
-            },
-            {
-                "interface": "Alexa",
-                "type": "AlexaInterface",
-                "version": "3"
-            }
         ]
     },
     {
@@ -680,5 +408,348 @@ DEVICES = [
                 "version": "3"
             }
         ]
+    },
+        {
+        "endpointId": "GarageLamp",
+        "friendlyName": "Lamp Garage",
+        "description": "Lamp in the garage",
+        "manufacturerName": "LED",
+        "displayCategories": [
+            "LIGHT"
+        ],
+        "metadata": {
+            "mqttTopicGet": "get/garage/space/lamp",
+            "mqttTopicSet": "set/garage/space/lamp"
+        },
+        "capabilities": [
+            {
+                "interface": "Alexa.PowerController",
+                "properties": {
+                    "proactivelyReported": False,
+                    "retrievable": True,
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ]
+                },
+                "type": "AlexaInterface",
+                "version": "3"
+            },
+            {
+                "interface": "Alexa",
+                "type": "AlexaInterface",
+                "version": "3"
+            }
+        ]
+    },
+        {
+        "endpointId": "GarageInternalDoor",
+        "friendlyName": "Internal Garage Door",
+        "description": "Internal Garage Door",
+        "manufacturerName": "Home Made",
+        "displayCategories": [
+            "CONTACT_SENSOR"
+        ],
+        "metadata": {
+            "mqttTopicGet": "get/garage/space/door/internal",
+            "mqttTopicSet": "set/garage/space/door/internal"
+        },
+        "capabilities": [
+            {
+                "interface": "Alexa.ContactSensor",
+                "properties": {
+                    "proactivelyReported": False,
+                    "retrievable": True,
+                    "supported": [
+                        {
+                            "name": "detectionState"
+                        }
+                    ]
+                },
+                "type": "AlexaInterface",
+                "version": "3"
+            },
+            {
+                "interface": "Alexa",
+                "type": "AlexaInterface",
+                "version": "3"
+            }
+        ]
     }
 ]
+
+
+#     {
+#         "endpointId": "ApartmentLock",
+#         "friendlyName": "Apartment Lock",
+#         "description": "Alarm system of Apartment zone",
+#         "manufacturerName": "Paradox",
+#         "displayCategories": [
+#             "SMARTLOCK"
+#         ],
+#         "metadata": {
+#             "mqttTopicGet": "get/home/lock",
+#             "mqttTopicSet": "set/home/lock"
+#         },
+#         "capabilities": [
+#             {
+#                 "interface": "Alexa.LockController",
+#                 "properties": {
+#                     "proactivelyReported": False,
+#                     "retrievable": True,
+#                     "supported": [
+#                         {
+#                             "name": "lockState"
+#                         }
+#                     ]
+#                 },
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             },
+#             {
+#                 "interface": "Alexa",
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             }
+#         ]
+#     },
+#     {
+#         "endpointId": "GarageLock",
+#         "friendlyName": "Garage Lock",
+#         "description": "Alarm system of Garage zone",
+#         "manufacturerName": "Paradox",
+#         "displayCategories": [
+#             "SMARTLOCK"
+#         ],
+#         "metadata": {
+#             "mqttTopicGet": "get/home/lock",
+#             "mqttTopicSet": "set/home/lock"
+#         },
+#         "capabilities": [
+#             {
+#                 "interface": "Alexa.LockController",
+#                 "properties": {
+#                     "proactivelyReported": False,
+#                     "retrievable": True,
+#                     "supported": [
+#                         {
+#                             "name": "lockState"
+#                         }
+#                     ]
+#                 },
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             },
+#             {
+#                 "interface": "Alexa",
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             }
+#         ]
+#     }, 
+
+#     {
+#         "endpointId": "SmallBedroomWindow",
+#         "friendlyName": "Window Small Bedroom",
+#         "description": "Sunblind for the window in the small bedroom",
+#         "manufacturerName": "Somfy",
+#         "displayCategories": [
+#             "SWITCH"
+#         ],
+#         "metadata": {
+#             "mqttTopicGet": "get/apartment/smallBedroom/sunblind/1",
+#             "mqttTopicSet": "set/apartment/smallBedroom/sunblind/1"
+#         },
+#         "capabilities": [
+#             {
+#                 "interface": "Alexa.PowerController",
+#                 "properties": {
+#                     "proactivelyReported": False,
+#                     "retrievable": True,
+#                     "supported": [
+#                         {
+#                             "name": "powerState"
+#                         }
+#                     ]
+#                 },
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             },
+#             {
+#                 "interface": "Alexa",
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             }
+#         ]
+#     },
+#     {
+#         "endpointId": "LargeBedroomWindowSunblind1",
+#         "friendlyName": "Door 1 Large Bedroom",
+#         "description": "Sunblind for the door in the large bedroom",
+#         "manufacturerName": "Somfy",
+#         "displayCategories": [
+#             "SWITCH"
+#         ],
+#         "metadata": {
+#             "mqttTopicGet": "get/apartment/largeBedroom/sunblind/1",
+#             "mqttTopicSet": "set/apartment/largeBedroom/sunblind/1"
+#         },
+#         "capabilities": [
+#             {
+#                 "interface": "Alexa.PowerController",
+#                 "properties": {
+#                     "proactivelyReported": False,
+#                     "retrievable": True,
+#                     "supported": [
+#                         {
+#                             "name": "powerState"
+#                         }
+#                     ]
+#                 },
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             },
+#             {
+#                 "interface": "Alexa",
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             }
+#         ]
+#     },
+#     {
+#         "endpointId": "LargeBedroomWindow2",
+#         "friendlyName": "Window 2 Large Bedroom",
+#         "description": "Sunblind for the second window in the large bedroom",
+#         "manufacturerName": "Somfy",
+#         "displayCategories": [
+#             "SWITCH"
+#         ],
+#         "metadata": {
+#             "mqttTopicGet": "get/apartment/largeBedroom/sunblind/2",
+#             "mqttTopicSet": "set/apartment/largeBedroom/sunblind/2"
+#         },
+#         "capabilities": [
+#             {
+#                 "interface": "Alexa.PowerController",
+#                 "properties": {
+#                     "proactivelyReported": False,
+#                     "retrievable": True,
+#                     "supported": [
+#                         {
+#                             "name": "powerState"
+#                         }
+#                     ]
+#                 },
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             },
+#             {
+#                 "interface": "Alexa",
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             }
+#         ]
+#     },
+#     {
+#         "endpointId": "LargeBedroomWindow3",
+#         "friendlyName": "Window 3 Large Bedroom",
+#         "description": "Sunblind for the third window in the large bedroom",
+#         "manufacturerName": "Somfy",
+#         "displayCategories": [
+#             "SWITCH"
+#         ],
+#         "metadata": {
+#             "mqttTopicGet": "get/apartment/largeBedroom/sunblind/3",
+#             "mqttTopicSet": "set/apartment/largeBedroom/sunblind/3"
+#         },
+#         "capabilities": [
+#             {
+#                 "interface": "Alexa.PowerController",
+#                 "properties": {
+#                     "proactivelyReported": False,
+#                     "retrievable": True,
+#                     "supported": [
+#                         {
+#                             "name": "powerState"
+#                         }
+#                     ]
+#                 },
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             },
+#             {
+#                 "interface": "Alexa",
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             }
+#         ]
+#     },
+#     {
+#         "endpointId": "LargeBedroomWindow4",
+#         "friendlyName": "Window 4 Large Bedroom",
+#         "description": "Sunblind for the fourth window in the large bedroom",
+#         "manufacturerName": "Somfy",
+#         "displayCategories": [
+#             "SWITCH"
+#         ],
+#         "metadata": {
+#             "mqttTopicGet": "get/apartment/largeBedroom/sunblind/4",
+#             "mqttTopicSet": "set/apartment/largeBedroom/sunblind/4"
+#         },
+#         "capabilities": [
+#             {
+#                 "interface": "Alexa.PowerController",
+#                 "properties": {
+#                     "proactivelyReported": False,
+#                     "retrievable": True,
+#                     "supported": [
+#                         {
+#                             "name": "powerState"
+#                         }
+#                     ]
+#                 },
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             },
+#             {
+#                 "interface": "Alexa",
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             }
+#         ]
+#     },
+#     {
+#         "endpointId": "LargeBedroomWindowAll",
+#         "friendlyName": "All Windows Large Bedroom",
+#         "description": "Sunblinds for all windows in the large bedroom",
+#         "manufacturerName": "Somfy",
+#         "displayCategories": [
+#             "SWITCH"
+#         ],
+#         "metadata": {
+#             "mqttTopicGet": "get/apartment/largeBedroom/sunblind/all",
+#             "mqttTopicSet": "set/apartment/largeBedroom/sunblind/all"
+#         },
+#         "capabilities": [
+#             {
+#                 "interface": "Alexa.PowerController",
+#                 "properties": {
+#                     "proactivelyReported": False,
+#                     "retrievable": True,
+#                     "supported": [
+#                         {
+#                             "name": "powerState"
+#                         }
+#                     ]
+#                 },
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             },
+#             {
+#                 "interface": "Alexa",
+#                 "type": "AlexaInterface",
+#                 "version": "3"
+#             }
+#         ]
+#     },

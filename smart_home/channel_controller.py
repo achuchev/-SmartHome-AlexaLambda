@@ -82,7 +82,7 @@ class ChannelController(object):
                             "number": str(channel_number)
                         },
                         "timeOfSample": get_utc_timestamp(),
-                        "uncertaintyInMilliseconds": 500
+                        "uncertaintyInMilliseconds": 0
                     }
                 ]
             }

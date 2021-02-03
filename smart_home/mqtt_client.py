@@ -32,7 +32,7 @@ class MQTTClient(object):
         logger.info("MQTT: Publish [%s]: %s", topic, message)
         if isinstance(message, dict):
             message = json.dumps(message)
-        mqtt_publish.single(topic, payload=message, qos=qos, client_id=MQTT_CLIENT_NAME,
+        mqtt_publish.single(topic, payload=message, qos=qos, retain=False, client_id=MQTT_CLIENT_NAME,
                             hostname=MQTT_SERVER, port=MQTT_PORT, auth=mqtt_auth, tls=mqtt_tls)
 
     @staticmethod

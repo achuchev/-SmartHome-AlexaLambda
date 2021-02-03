@@ -49,7 +49,7 @@ class PercentageController(object):
                         "name": "percentage",
                         "value": int(percentage),
                         "timeOfSample": get_utc_timestamp(),
-                        "uncertaintyInMilliseconds": 500
+                        "uncertaintyInMilliseconds": 0
                     }
                 ]
             }

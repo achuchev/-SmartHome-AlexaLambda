@@ -73,7 +73,7 @@ class ThermostatController(object):
                     "scale": "CELSIUS"
                 },
                 "timeOfSample": get_utc_timestamp(),
-                "uncertaintyInMilliseconds": 500
+                "uncertaintyInMilliseconds": 0
             })
         if current_mode is not None:
             properties.append({
@@ -81,7 +81,7 @@ class ThermostatController(object):
                 "name": "thermostatMode",
                 "value": current_mode.upper(),
                 "timeOfSample": get_utc_timestamp(),
-                "uncertaintyInMilliseconds": 500
+                "uncertaintyInMilliseconds": 0
             })
         return properties
 

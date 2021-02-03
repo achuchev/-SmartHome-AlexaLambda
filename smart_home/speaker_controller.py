@@ -62,7 +62,7 @@ class SpeakerController(object):
                 "name": "volume",
                 "value": volume,
                 "timeOfSample": get_utc_timestamp(),
-                "uncertaintyInMilliseconds": 500
+                "uncertaintyInMilliseconds": 0
             })
         if muted is not None:
             properties.append({
@@ -70,7 +70,7 @@ class SpeakerController(object):
                 "name": "muted",
                 "value": muted,
                 "timeOfSample": get_utc_timestamp(),
-                "uncertaintyInMilliseconds": 500
+                "uncertaintyInMilliseconds": 0
             })
 
         payload = {
